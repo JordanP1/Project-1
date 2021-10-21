@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="hero">
+        <input type="button" class="logout-btn" id="logout-btn-id" value="Logout">
+        <h1>Manager Page</h1>
+
+        <h3>Pending Requests</h3>
+        <table class="reimbursement-table">
+            <tr>
+                <th>Id</th>
+                <th>Submitter Id</th>
+                <th>Resolver Id</th>
+                <th>Submitter Email</th>
+                <th>Resolver Email</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Moderate</th>
+            </tr>
+
+            <tbody id="reimbursement-items">
+                
+            </tbody>
+        </table>
+
+        <br/>
+
+        <h3>Processed Requests</h3>
+        <table class="reimbursement-table">
+            <tr>
+                <th>Id</th>
+                <th>Submitter Id</th>
+                <th>Resolver Id</th>
+                <th>Submitter Email</th>
+                <th>Resolver Email</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+
+            <tbody id="reimbursement-items-processed">
+                
+            </tbody>
+        </table>
+
+        <br/>
+
+        <h3>Users</h3>
+        <table class="user-table">
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Type</th>
+            </tr>
+
+            <tbody id="user-items">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./manager.js"></script>
+</body>
+</html>

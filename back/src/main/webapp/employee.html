@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="hero">
+        <input type="button" class="logout-btn" id="logout-btn-id" value="Logout">
+        <h1>Employee Page</h1>
+
+        <h3>Submit New Reimbursement Request</h3>
+        <form class="reimbursement-form" id="reimbursement-form-id">
+            <label for="amount">Amount</label>
+            <input type="number" class="number-cl" id="amount" name="amount" min="0">
+
+            <input type="submit" class="submit-btn" value="Submit">
+        </form>
+
+        <h3>Pending Requests</h3>
+        <table class="reimbursement-table">
+            <tr>
+                <th>Id</th>
+                <th>Submitter Id</th>
+                <th>Resolver Id</th>
+                <th>Submitter Email</th>
+                <th>Resolver Email</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+
+            <tbody id="reimbursement-items">
+                
+            </tbody>
+        </table>
+
+        <br/>
+
+        <h3>Processed Requests</h3>
+        <table class="reimbursement-table">
+            <tr>
+                <th>Id</th>
+                <th>Submitter Id</th>
+                <th>Resolver Id</th>
+                <th>Submitter Email</th>
+                <th>Resolver Email</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+
+            <tbody id="reimbursement-items-processed">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./employee.js"></script>
+</body>
+</html>

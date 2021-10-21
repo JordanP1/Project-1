@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+    background: #F2F2F2;
+    margin: 10;
+    font-family: 'Poppins';
+  }
+
+  .login-section {
+      display: flex;
+      margin: 20px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid gray;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: .8em 2em;
+    width: unset;
+    cursor: pointer;
+  }
+
+  .logout-btn {
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: .8em 2em;
+    width: 200px;
+    cursor: pointer;
+  }
+
+  .reimbursement-table, th, td {
+    border: 1px solid black;
+  }
+
+  .number-cl {
+    width: 10em;
+  }
